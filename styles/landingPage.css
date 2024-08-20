@@ -1,0 +1,1470 @@
+/* Style untuk Halaman Landing Page */
+body {
+    font-family: "Nunito", "sans-serif";
+    margin: 100px 0px 0px 0px;
+    padding: 0;
+    background-color: #73B385;
+}
+
+/* Style untuk Header */
+header {
+    position: fixed;
+    height: 40px;
+    display: flex;
+    background-color: #73B385;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 0px 30px;
+    z-index: 100;
+    box-shadow: 0px 4px 5px 0px #79767672;
+    border-radius: 0 0 10px 10px;
+    transition: height 0.3s;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-size: 14px;
+}
+
+button {
+    background-color:  rgb(102, 159, 118, 0);
+    border-style: none;
+    cursor: pointer;
+}
+
+button img {
+    width: 25px;
+    height: auto;
+}
+
+.burgerMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: #73B385;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    width: 130px;
+    border: 1px solid #5B8E69;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 3px 2px 0px #79767672;
+}
+
+.burgerMenu li {
+    padding: 10px 30px 10px 5px;
+    text-align: right;
+    font-size: 10px;
+    font-weight: lighter;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.burgerMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+.burgerMenu hr {
+    border: none;
+    height: 0.5px;
+    width: 90px;
+    background-color: #5B8E69;
+    margin: 0 auto;
+}
+
+.burgerMenu li:hover {
+    background-color:rgb(102, 159, 118, 1);
+    font-weight: 700;
+}
+
+.burgerMenu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.burgerMenu.active {
+    display: block; /* Display menu when active class is added */
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(115, 179, 133, 0.5px); /* Semi-transparent background */
+    backdrop-filter: blur(2px); /* Apply blur effect */
+    z-index: 5; /* Behind the content and menu */
+    display: none; /* Initially hidden */
+}
+
+#overlay.active {
+    display: block; /* Show overlay when active class is added */
+}
+
+ul {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+/* Style untuk Beranda */
+.beranda > .web {
+    display: none;
+}
+
+.beranda {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #73B385;
+    color: white;
+    padding: 0 30px 0 30px;
+    gap: 15px;
+}
+
+.beranda h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mobile p {
+    padding-right: 20px;
+    font-size: 9px;
+    margin: 0;
+}
+
+.mobile button {
+    width: 90px;
+    height: 24px;
+    background-color: #5B8E69;
+    border-radius: 10px;
+    font-family: "Nunito", "sans-serif";
+    font-weight: bold;
+    border-color: #73B385;
+    color: white;
+    box-shadow: 0px 3px 1px 0px #79767672;
+    border-style: solid;
+    margin-left: 20px;
+}
+
+#btnKonsultasi:hover {
+    background-color: #6fa064;
+}
+
+.mobile div button p {
+    padding: 0;
+}
+
+.mobile div img {
+    position: static;
+    align-self: flex-end;
+    width: 130px;
+}
+
+.vector1 {
+    position: absolute;
+    width: 90px;
+    top: 160px;
+    left: 0%;
+}
+
+.vector2 {
+    position: absolute;
+    width: 80px;
+    top: 45px;
+    right: 0%;
+}
+
+/* Style untuk Tentang SIPAKAR */
+.ttgSIPAKAR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 20px 20px 0px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.tentang {
+    box-shadow: 10px 10px 5px 0px #79767672;
+}
+
+.ttgSIPAKAR img.stomachache {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 150px;
+    height: auto;
+}
+
+.ttgSIPAKAR div {
+    position: relative;
+    z-index: 2; 
+    background-color: rgb(102, 159, 118, 0.3);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.ttgSIPAKAR h3 {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.ttgSIPAKAR p {
+    font-size: 8px;
+    text-align: justify;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+
+/* Style untuk Informasi Penyakit */
+.infopenyakit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.infopenyakit h3 {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.barpenyakit {
+    z-index: 2; 
+    background-color: rgb(102, 159, 118, 0.3);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 0px 20px;
+    box-shadow: 10px 10px 5px 0px #79767672;
+}
+
+.barpenyakit ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    font-size: 8px;
+    width: 240px;
+    height: fit-content;
+    overflow-x: scroll;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.barpenyakit ul::-webkit-scrollbar {
+    display: none;
+}
+
+.barpenyakit ul li {
+    width: fit-content;
+    height: fit-content;
+    align-content: center;
+    text-wrap: nowrap;
+}
+
+.barpenyakit ul li:hover {
+    color: white;
+    font-weight: bold;
+    background-color: #73B385;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.custom-hr {
+    border: none;
+    height: 0.5px;
+    width: auto;
+    background-color: #263238;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-auto-rows: 1fr;
+    gap: 0px 10px;
+    width: 100%;
+    height: 80%;
+    padding: 10px 0px 30px;
+}
+
+.grid h4, .grid p {
+    padding: 1px 0px;
+    font-size: 7px;
+    margin: 0;
+}
+
+.item1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    width: fit-content;
+}
+
+.item1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: fit-content;
+}
+
+.item3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: fit-content;
+}
+
+.item4 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    height: fit-content;
+}
+
+.item5 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.item5 h4 {
+    margin-top: 9px;
+}
+
+/* Style untuk Footer */
+footer {
+    background-color: #455a64;
+    color: white;
+    padding:  30px 30px 20px;
+}
+
+footer h3 {
+    font-size: 12px;
+}
+
+footer p {
+    font-size: 9px;
+    margin: auto;
+    font-weight: 100;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0%;
+    margin: 10px;
+}
+
+footer ul li {
+    display: flex;
+    gap: 10px;
+}
+
+.kontakPengembang {
+    padding-top: 20px;
+}
+
+.copyright {
+    margin-top: 60px;
+    text-align: center;
+}
+
+@media (min-width: 375px) {
+    body {
+        margin-top: 110px;
+    }
+    /* Style untuk Header */
+    header {
+        height: 45px;
+        padding: 15px 40px 0 40px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    .beranda h2 {
+        font-size: 15px;
+    }
+
+    .beranda p {
+        font-size: 10px;
+    }
+
+    button img {
+        width: 30px;
+    }
+
+    .burgerMenu {
+        top: 55px;
+        width: 145px;
+    }
+
+    .burgerMenu li {
+        padding: 12px 30px 12px 10px;
+        font-size: 12px;
+    }
+
+    .burgerMenu hr {
+        width: 105px;
+    }
+
+    /* Style untuk Beranda */
+    .beranda {
+        padding: 0 40px 0 40px;
+    }
+    
+    .mobile div img {
+        width: 140px;
+    }
+    
+    .vector1 {
+        position: absolute;
+        width: 95px;
+        top: 180px;
+    }
+    
+    .vector2 {
+        top: 55px;
+    }
+
+    /* Style untuk Tentang SIPAKAR */
+    .ttgSIPAKAR {
+        padding: 30px 30px 0px 30px;
+    }
+
+    .ttgSIPAKAR img.stomachache {
+        top: 30%;
+    }
+
+    .ttgSIPAKAR p {
+        font-size: 10px;
+    }
+
+
+    /* Style untuk Informasi Penyakit */
+    .infopenyakit {
+        padding: 30px;
+    }
+    
+    .barpenyakit {
+        padding: 0px 25px;
+    }
+    
+    .barpenyakit ul {
+        width: 257px;
+        font-size: 10px;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-rows: auto auto auto auto;
+        grid-auto-rows: 1fr;
+        gap: 1px 10px;
+        width: 100%;
+        height: 80%;
+        padding: 15px 0px 30px;
+    }
+    
+    .grid h4, .grid p {
+        padding: 1px 0px;
+        font-size: 8px;
+        margin: 0;
+    }
+
+    .item5 h4 {
+        margin-top: 9px;
+    }
+
+    /* Style untuk Footer */
+    footer {
+        padding: 40px 40px 20px;
+    }
+    
+    footer h3 {
+        font-size: 13px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 425px) {
+    body {
+        margin-top: 120px;
+    }
+    /* Style untuk Header */
+
+    h1 {
+        font-size: 16px;
+    }
+
+    /* Style untuk Beranda */
+    .beranda h2 {
+        font-size: 16px;
+    }
+
+    .mobile p {
+        font-size: 11px;
+    }
+
+    .mobile div button {
+        width: 100px;
+        height: 25px;
+    }
+
+    .mobile div img {
+        width: 150px;
+    }
+
+    .vector1 {
+        top: 210px;
+    }
+
+    /* Style untuk Tentang SIPAKAR */
+    .ttgSIPAKAR {
+        padding: 40px 40px 0px;
+    }
+
+    .ttgSIPAKAR img.stomachache {
+        top: 35%;
+    }
+
+    .ttgSIPAKAR h3 {
+        font-size: 14px;
+    }
+
+    .ttgSIPAKAR p {
+        font-size: 10px;
+    }
+
+    /* Style untuk Informasi Penyakit */
+    .infopenyakit h3 {
+        font-size: 14px;
+    }
+    
+    .infopenyakit {
+        padding: 40px;
+    }
+
+    .barpenyakit ul {
+        width: 295px;
+        font-size: 11px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-rows: auto auto auto auto;
+        grid-auto-rows: 1fr;
+        gap: 1px 10px;
+        width: 100%;
+        height: 80%;
+        padding: 15px 0px 30px;
+    }
+    
+    .grid h4, .grid p {
+        padding: 1px 0px;
+        font-size: 8px;
+        margin: 0;
+    }
+
+    .item5 h4 {
+        margin-top: 9px;
+    }
+
+    /* Style untuk Footer */
+    footer {
+        padding: 40px 40px 20px;
+    }
+
+    /* Style untuk Footer */
+    footer {
+        padding: 30px 40px 20px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 600px) {
+    /* Style untuk Header */
+    h1 {
+        font-size: 18px;
+    }
+
+    /* Style untuk Beranda */
+    .beranda > .mobile {
+        display: none;
+    }
+
+    .beranda > .web {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .beranda {
+        padding: 0px 60px;
+    }
+
+    .beranda h2 {
+        font-size: 18px;
+    }
+
+    .web-body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .web p {
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .web button {
+        width: 110px;
+        height: 30px;
+        background-color: #5B8E69;
+        border-radius: 10px;
+        font-family: "Nunito", "sans-serif";
+        font-weight: bold;
+        border-color: #73B385;
+        color: white;
+        box-shadow: 0px 3px 1px 0px #79767672;
+        border-style: solid;
+        margin-left: 20px;
+    }
+
+    #btnKonsultasi2:hover {
+        background-color: #6fa064;
+    }
+
+    .web-body button p {
+        padding: 0;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .web div img {
+        width: 200px;
+    }
+
+    .vector1 {
+        position: absolute;
+        width: 120px;
+        top: 160px;
+        left: 0%;
+    }
+
+    .vector2 {
+        position: absolute;
+        width: 110px;
+        top: 55px;
+        right: 0%;
+    }
+
+    /* Style untuk Tentang SIPAKAR */
+    .ttgSIPAKAR {
+        padding: 40px 60px 0px;
+    }
+
+    .ttgSIPAKAR img.stomachache {
+        top: 30%;
+        width: 30%;
+    }
+
+    .ttgSIPAKAR h3 {
+        font-size: 16px;
+    }
+
+    .ttgSIPAKAR p {
+        font-size: 12px;
+    }
+
+    /* Style untuk Informasi Penyakit */
+    .infopenyakit {
+        padding: 40px 60px;
+    }
+
+    .infopenyakit h3 {
+        font-size: 16px;
+    }
+    
+    .barpenyakit ul {
+        width: 420px;
+        font-size: 15px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-rows: auto auto auto auto;
+        grid-auto-rows: 1fr;
+        gap: 2px 15px;
+        width: 100%;
+        height: 80%;
+        padding: 20px 0px 40px;
+    }
+    
+    .grid h4, .grid p {
+        padding: 1px 0px;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .item1 img {
+        border-radius: 10px;
+    }
+
+    .item5 h4 {
+        margin-top: 10px;
+    }
+
+    /* Style untuk Footer */
+    footer {
+        padding: 40px 40px 20px;
+    }
+
+    /* Style untuk Footer */
+    footer h3 {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 667px) {
+    /* Style untuk Header */
+    header h1 {
+        font-size: 20px;
+    }
+
+    /* Style untuk Beranda */
+    .beranda {
+        padding: 0px 70px;
+    }
+
+    .beranda h2 {
+        font-size: 20px;
+    }
+
+    .beranda p {
+        font-size: 13px;
+    }
+
+    #btnKonsultasi2 {
+        width: 130px;
+    }
+
+    #btnKonsultasi2 p {
+        font-size: 14px;
+    }
+
+    .vector2 {
+        width: 90px;
+    }
+
+    /* Style untuk Tentang SIPAKAR */
+    .ttgSIPAKAR {
+        padding: 40px 70px 0px;
+    }
+
+    .ttgSIPAKAR div {
+        padding: 40px;
+    }
+
+    .ttgSIPAKAR p {
+        font-size: 12px;
+    }
+
+    /* Style untuk Informasi Penyakit */
+    .infopenyakit {
+        padding: 40px 70px;
+    }
+
+    .barpenyakit ul {
+        width: 470px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-rows: auto auto auto auto;
+        grid-auto-rows: 1fr;
+        gap: 2px 15px;
+        width: 100%;
+        height: 80%;
+        padding: 20px 0px 40px;
+    }
+    
+    .grid h4, .grid p {
+        padding: 1px 0px;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .item1 img {
+        border-radius: 10px;
+    }
+
+    .item5 h4 {
+        margin-top: 10px;
+    }
+
+    /* Style untuk Footer */
+    footer {
+        padding: 40px 40px 20px;
+    }
+
+    /* Style untuk Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 50px 20px;
+    }
+
+    .isi-footer {
+        display: flex;
+        gap: 60px;
+    }
+
+    .footer-sipakar {
+        width: 50%;
+    }
+
+    .kontakPengembang{
+        padding: 0%;
+    }
+
+    footer h3 {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Style untuk Header */
+    header {
+        padding: 10px 50px 0px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    #burgerButton {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        border: none;
+        backdrop-filter: none;
+        width: fit-content;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px 0px #79767672;
+    }
+
+    .burgerMenu li {
+        padding: 0px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: lighter;
+        border-radius: 0px;
+    }
+
+    .burgerMenu a {
+        padding-left: 20px;
+    }
+
+    .burgerMenu > .custom-hr {
+        display: none;
+    }
+
+    .burgerMenu li:hover {
+        background-color: transparent;
+    }
+
+    /* Style untuk Beranda */
+    .beranda > .mobile {
+        display: none;
+    }
+
+    .beranda > .web {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .beranda {
+        padding: 0px 80px;
+    }
+
+    .beranda h2 {
+        font-size: 22px;
+        width: 500px;
+    }
+
+    .web-body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .web p {
+        font-size: 14px;
+    }
+
+    .web button {
+        width: 140px;
+        min-height: 35px;
+    }
+
+    .web-body button p {
+        font-size: 14px;
+    }
+
+    .web div img {
+        width: 230px;
+    }
+
+    .vector1 {
+        width: 130px;
+        top: 173px;
+    }
+
+    .vector2 {
+        width: 100px;
+        top: 50px;
+    }
+
+    /* Style untuk Tentang SIPAKAR */
+    .ttgSIPAKAR {
+        padding: 50px 80px 0px;
+    }
+
+    .ttgSIPAKAR div {
+        padding: 50px;
+    }
+
+    .ttgSIPAKAR img.stomachache {
+        top: 30%;
+        width: 30%;
+    }
+
+    .ttgSIPAKAR h3 {
+        font-size: 18px;
+    }
+
+    .ttgSIPAKAR p {
+        font-size: 14px;
+    }
+
+    /* Style untuk Informasi Penyakit */
+    .infopenyakit {
+        padding: 50px 80px;
+    }
+
+    .infopenyakit h3 {
+        font-size: 18px;
+    }
+
+    .barpenyakit {
+        padding: 0px 50px;
+    }
+    
+    .barpenyakit ul {
+        width: 500px;
+        font-size: 16px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-rows: auto auto auto auto;
+        grid-auto-rows: 1fr;
+        gap: 5px 15px;
+        width: 100%;
+        height: 80%;
+        padding: 20px 0px 40px;
+    }
+    
+    .grid h4, .grid p {
+        padding: 1px 0px;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .item5 h4 {
+        margin-top: 11px;
+    }
+
+    /* Style untuk Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 50px 20px;
+    }
+
+    .isi-footer {
+        display: flex;
+        gap: 90px;
+    }
+
+    .footer-sipakar {
+        width: 50%;
+    }
+
+    .kontakPengembang{
+        padding: 0%;
+    }
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin: 150px 0px 0px 0px;
+    }
+
+    /* Style untuk Header */
+    header {
+        padding: 20px 80px 5px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .burgerMenu li {
+        font-size: 16px;
+    }
+
+    .burgerMenu a {
+        padding-left: 30px;
+    }
+
+    /* Style untuk Beranda */
+    .beranda {
+        padding: 0px 120px;
+        gap: 30px;
+    }
+
+    .beranda h2 {
+        font-size: 26px;
+        width: auto;
+    }
+
+    .web-body {
+        gap: 30px;
+    }
+
+    .web p {
+        font-size: 16px;
+    }
+
+    #btnKonsultasi2 {
+        width: 170px;
+        height: 40px;
+    }
+
+    #btnKonsultasi2 p {
+        font-size: 16px;
+    }
+
+    .web div img {
+        width: 270px;
+    }
+
+    .vector1 {
+        width: 150px;
+        top: 190px;
+    }
+
+    .vector2 {
+        width: 120px;
+        top: 65px;
+    }
+
+    /* Style untuk Tentang SIPAKAR */
+    .ttgSIPAKAR {
+        padding: 80px 120px 0px;
+    }
+
+    .ttgSIPAKAR div {
+        padding: 60px;
+    }
+
+    .ttgSIPAKAR img.stomachache {
+        top: 30%;
+        width: 25%;
+    }
+
+    .ttgSIPAKAR h3 {
+        font-size: 22px;
+    }
+
+    .ttgSIPAKAR p {
+        font-size: 16px;
+    }
+
+    /* Style untuk Informasi Penyakit */
+    .infopenyakit {
+        padding: 50px 120px 80px;
+    }
+
+    .infopenyakit h3 {
+        font-size: 22px;
+    }
+
+    .barpenyakit {
+        padding: 10px 60px;
+    }
+    
+    .barpenyakit ul {
+        width: 660px;
+        font-size: 18px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-rows: auto auto auto auto;
+        grid-auto-rows: 1fr;
+        gap: 5px 15px;
+        width: 100%;
+        height: 80%;
+        padding: 20px 0px 40px;
+    }
+    
+    .grid h4, .grid p {
+        padding: 1px 0px;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .item5 h4 {
+        margin-top: 11px;
+    }
+
+
+    /* Style untuk Footer */
+    footer {
+        padding: 30px 80px 20px;
+    }
+
+    .isi-footer {
+        gap: 140px;
+    }
+
+    footer h3 {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+} 
+
+@media (min-width: 1347px) {
+    body {
+        margin: 170px 0px 0px 0px;
+    }
+
+    /* Style untuk Header */
+    header {
+        padding: 30px 100px 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .burgerMenu li {
+        font-size: 18px;
+    }
+
+    /* Style untuk Beranda */
+    .beranda {
+        padding: 0px 100px 0px 180px;
+        gap: 50px;
+    }
+
+    .beranda h2 {
+        font-size: 32px;
+    }
+
+    .web-body {
+        gap: 50px;
+    }
+
+    .web {
+        gap: 0px;
+    }
+
+    .web p {
+        font-size: 22px;
+    }
+
+    #btnKonsultasi2 {
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+    }
+
+    #btnKonsultasi2 p {
+        font-size: 22px;
+    }
+
+    .web div img {
+        width: 410px;
+    }
+
+    .vector1 {
+        width: 220px;
+        top: 240px;
+    }
+
+    .vector2 {
+        width: 180px;
+        top: 75px;
+    }
+
+    /* Style untuk Tentang SIPAKAR */
+    .ttgSIPAKAR {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 80px 100px 0px;
+    }
+    
+    .ttgSIPAKAR img.stomachache {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: none;
+        z-index: 1;
+        width: 35%;
+        height: auto;
+    }
+
+    .tentang {
+        width: 500px;
+        padding: 50px;
+        box-shadow: 10px 10px 5px 0px #79767672;
+    }
+    
+    .ttgSIPAKAR div {
+        position: relative;
+        z-index: 2; 
+        background-color: rgb(102, 159, 118, 0.3);
+        backdrop-filter: blur(2px);
+        border-radius: 30px;
+        padding: 80px 50px;
+    }
+    
+    .ttgSIPAKAR h3 {
+        font-size: 24px;
+        font-weight: 900;
+    }
+    
+    .ttgSIPAKAR p {
+        font-size: 16px;
+    }
+
+    /* Style untuk Informasi Penyakit */
+    .infopenyakit {
+        padding: 100px;
+    }
+
+    .infopenyakit h3 {
+        font-size: 24px;
+    }
+
+    .barpenyakit {
+        padding: 10px 60px 0px;
+    }
+
+    .barpenyakit > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .barpenyakit ul {
+        width: 1028px;
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    .grid {
+        grid-template-columns: 20% 36% 38%;
+        grid-template-rows: auto auto auto auto;
+        gap: 0% 3%;
+        padding-top: 30px;
+    }
+
+    .item1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+    }
+
+    .item2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .item3 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .item4 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .item5 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 4;
+    }
+
+    .item5 h4 {
+        margin: 0;
+    }
+
+    .item5 p {
+        text-align: justify;
+    }
+
+    /* Style untuk Footer */
+    footer {
+        padding: 30px 100px 30px 100px;
+    }
+
+    .isi-footer {
+        gap: 250px;
+    }
+
+    footer h3 {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1440px) {
+    /* Style untuk Beranda */
+    .vector1 {
+        width: 200px;
+        top: 210px;
+    }
+
+    /* Style untuk Tentang SIPAKAR */
+    .tentang {
+        width: 580px;
+    }
+    
+    .ttgSIPAKAR h3 {
+        font-size: 28px;
+    }
+    
+    .ttgSIPAKAR p {
+        font-size: 20px;
+    }
+
+    /* Style untuk Informasi Penyakit */
+    .infopenyakit h3 {
+        font-size: 28px;
+    }
+
+    .barpenyakit {
+        padding: 10px 60px 90px;
+    }
+
+    .barpenyakit ul {
+        width: 1098px;
+    }
+
+    .grid {
+        grid-template-columns: 24% 32% 38%;
+        grid-template-rows: auto auto auto auto;
+        gap: 5% 3%;
+        padding-top: 30px;
+    }
+
+    .grid h4, .grid p {
+        font-size: 18px;
+        padding: 5px 0px;
+    }
+
+    .item5 h4 {
+        margin: 0;
+    }
+
+    .item5 p {
+        text-align: justify;
+    }
+
+    /* Style untuk Footer */
+    footer h3 {
+        font-size: 32px;
+    }
+
+    footer p {
+        font-size: 24px;
+    }
+} 

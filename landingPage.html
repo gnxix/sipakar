@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        </style>
+    <link rel="stylesheet" href="./styles/landingPage.css">
+    <title>SIPAKAR</title>
+</head>
+<body class="landingPage">
+    <header>
+        <h1>SIPAKAR</h1>
+        <button id="burgerButton">
+            <img src="./assets/mdi-light_menu.svg" alt="Menu">
+        </button>
+        <ul class="burgerMenu" id="burgerMenu">
+            <a href="#beranda">
+                <li>Beranda</li>
+            </a>
+            <hr class="custom-hr">
+            <a href="#ttgSIPAKAR">
+                <li>Tentang SIPAKAR</li>
+            </a>
+            <hr class="custom-hr">
+            <a href="#infopenyakit">
+                <li>Informasi Penyakit</li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+        <div id="beranda" class="beranda">
+            <h2>
+                SISTEM PAKAR DIAGNOSIS AWAL PENYAKIT LAMBUNG
+            </h2>
+            <div class="mobile">
+                <p>
+                    Yuk, segera cek kesehatan lambungmu disini. Dapatkan berbagai informasi terkait kesehatan lambung berdasarkan gejalamu dengan klik konsultasi di bawah ini.
+                </p>
+                <div>
+                    <button id="btnKonsultasi">
+                        <p>
+                            KONSULTASI
+                        </p>
+                    </button>
+                    <img src="./assets/pana.svg" alt="">
+                </div>
+            </div>
+            <div class="web">
+                <div class="web-body">
+                    <p>
+                        Yuk, segera cek kesehatan lambungmu disini. Dapatkan berbagai informasi terkait kesehatan lambung berdasarkan gejalamu dengan klik konsultasi di bawah ini.
+                    </p>
+                    <button id="btnKonsultasi2">
+                        <p>
+                            KONSULTASI
+                        </p>
+                    </button>
+                </div>
+                <div>
+                    <img src="./assets/pana.svg" alt="">
+                </div>
+            </div>
+            <img src="./assets/Vector 3.svg" alt="" class="vector1">
+            <img src="./assets/Vector 3 (1).svg" alt="" class="vector2">
+        </div>
+
+        <div id="ttgSIPAKAR" class="ttgSIPAKAR">
+            <img src="./assets/stomachache.svg" alt="" class="stomachache">
+            <div class="tentang">
+                <h3>
+                    TENTANG SIPAKAR
+                </h3>
+                <p>
+                    SIPAKAR adalah aplikasi sistem pakar untuk diagnosa awal penyakit lambung. Aplikasi ini menggunakan metode forward chaining untuk memulai dari gejala yang dilaporkan dan menerapkan aturan-aturan medis untuk mencapai diagnosa. Metode certainty factor digunakan untuk menangani ketidakpastian dengan memberikan nilai kepastian pada setiap diagnosa. Pengguna memasukkan gejala, sistem memproses dan menghitung kepastian, lalu memberikan hasil diagnosa dengan tingkat keyakinan tertentu. Dengan demikian, SIPAKAR membantu pengguna memahami kondisi lambung mereka secara cepat dan akurat.
+                </p>
+            </div>
+        </div>
+
+        <div id="infopenyakit" class="infopenyakit">
+            <h3>
+                INFORMASI PENYAKIT
+            </h3>
+            <div class="barpenyakit">
+                <ul class="scroll-container">
+                    <a href=""></a>
+                    <li onclick="showInfo('dispepsia')">Dispepsia</li>
+                    <li onclick="showInfo('gastritis')">Gastritis</li>
+                    <li onclick="showInfo('gerd')">GERD</li>
+                    <li onclick="showInfo('gastroparesis')">Gastroparesis</li>
+                    <li onclick="showInfo('gastroenteritis')">Gastroenteritis</li>
+                    <li onclick="showInfo('polipLambung')">Polip Lambung</li>
+                    <li onclick="showInfo('tukakLambung')">Tukak Lambung</li>
+                    <li onclick="showInfo('kankerLambung')">Kanker Lambung</li>
+                </ul>
+                <hr class="custom-hr">
+                <div>
+                    <div class="grid">
+                        <div class="item1">
+                            <img id="disease-image" src="./assets/Dispepsia.jpg" alt="">
+                        </div>
+                        <div class="item2">
+                            <h4>
+                                Deskripsi Penyakit
+                            </h4>
+                            <p id="disease-desc">
+                                Dispepsia adalah istilah medis yang merujuk pada gangguan pencernaan atau rasa tidak nyaman di bagian atas perut.
+                            </p>
+                        </div>
+                        <div class="item3">
+                            <h4>
+                                Penyebab
+                            </h4>
+                            <p id="disease-cause">
+                                Konsumsi makanan berlemak, berminyak, asam dan pedas terlalu banyak. Konsumsi minuman beralkohol, bersoda, dan berkafein tinggi. Merokok, merasa cemas/stres, dan konsumsi jenis obat NSAID.
+                            </p>
+                        </div>
+                        <div class="item4">
+                            <h4>
+                                Gejala Penyakit
+                            </h4>
+                            <p id="disease-symptoms">
+                                Mual, muntah, perut kembung, cepat merasa kenyang, nyeri pada ulu hati, tidak nafsu makan, penurunan berat badan tanpa alasan yang jelas, anemia.
+                            </p>
+                        </div>
+                        <div class="item5">
+                            <h4>
+                                Cara Mencegah Penyakit
+                            </h4>
+                            <p id="disease-prevention">
+                                Menghindari makanan berlemak, berminyak, asam dan pedas. Berhenti/tidak mengkonsumsi minuman beralkohol. Mengurangi minuman bersoda, berkafein, dan cokelat. Merokok. Mengontrol cemas/stres yang berlebihan. Berkonsultasi dengan dokter dalam pemilihan jenis obat antibiotik dan penghilang rasa nyeri.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="overlay"></div>
+
+    <footer>
+       <div>
+        <div class="isi-footer">
+           <div class="footer-sipakar">
+            <h3>SIPAKAR</h3>
+            <p>
+                SIPAKAR adalah aplikasi sistem pakar untuk diagnosa awal penyakit lambung. Aplikasi ini menggunakan metode forward chaining untuk memulai dari gejala yang dilaporkan dan menerapkan aturan-aturan medis untuk mencapai diagnosa. Dengan adanya SIPAKAR dapat membantu pengguna memahami kondisi lambung mereka secara cepat dan akurat.
+            </p>
+           </div>
+            <div class="kontakPengembang">
+                <h3>
+                    Kontak Pengembang
+                </h3>
+                <p>
+                    Gabrielle Natasha Arla Frederica
+                </p>
+                <ul>
+                    <li>
+                        <img src="./assets/icon-mail.svg" alt="">
+                        <p>
+                            arlarumbayan@gmail.com
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="./assets/icon-instagram.svg" alt="">
+                        <p>
+                            g_fxix
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       </div>
+       <div class="copyright">
+        <p>
+            Copyright ©️ 2024 • SIPAKAR 
+        </p>
+       </div>
+    </footer>
+
+    <script src="./functions/landingPage.js"></script>
+</body>
+</html>
